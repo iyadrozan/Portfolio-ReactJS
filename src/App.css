@@ -1,1 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:wght@300;500&display=swap');
 
+:root {
+  --primary-white: #fff;
+  --primary-blue: rgba(33, 17, 255, 0.699);
+  --primary-dark: rgb(18, 13, 48);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.bg-color {
+  background-color: rgb(18, 13, 48);
+}
+
+.navbar-brand {
+  font-family: 'Hurricane', cursive;
+  font-size: 1.5625rem;
+}
+
+.nav-item {
+  margin: 0 0.625rem;
+}
+
+.navbar-nav > li > a {
+  border-bottom: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-nav > li > a:hover {
+  border-bottom: 0.1875rem solid var(--primary-blue);
+  border-radius: 0.1845rem;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  border-bottom: 0.1875rem solid var(--primary-blue);
+  border-radius: 0.1845rem;
+  color: var(--primary-white) !important;
+}
+
+/* Navbar Styling */
