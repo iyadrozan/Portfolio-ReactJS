@@ -3,6 +3,7 @@
 :root {
   --primary-white: #fff;
   --primary-cyan: rgb(100, 250, 255);
+  --primary-cyan-hover: rgba(100, 250, 255, 0.781);
   --primary-dark: rgb(18, 13, 48);
   --primary-blue: rgb(51, 105, 255);
   --primary-blue-hover: rgba(51, 105, 255, 0.575);
@@ -70,7 +71,7 @@ body {
   color: var(--primary-cyan);
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 /* --Typed Styling-- */
 .typed-text {
@@ -81,7 +82,7 @@ body {
 /* --Typed Styling-- */
 /* --Btn Contact Me */
 .btn-contact {
-  border: 3px solid var(--primary-blue);
+  border: 3px solid var(--primary-cyan);
   text-transform: uppercase;
   color: var(--primary-white);
   font-weight: 500;
@@ -93,7 +94,19 @@ body {
 
 .btn-contact:hover {
   color: var(--primary-white);
-  border: 3px solid var(--primary-blue-hover);
+  background-color: var(--primary-cyan-hover);
+  border: 3px solid var(--primary-cyan-hover);
+  transition: 0.2s ease-in-out;
 }
 /* --Btn Contact Me */
+/* @media */
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+/* @media */
 /* -----Header Styling----- */
