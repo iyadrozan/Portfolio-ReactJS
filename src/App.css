@@ -2,15 +2,17 @@
 
 :root {
   --primary-white: #fff;
-  --primary-blue: rgba(33, 17, 255, 0.699);
+  --primary-cyan: rgb(100, 250, 255);
   --primary-dark: rgb(18, 13, 48);
+  --primary-blue: rgb(51, 105, 255);
+  --primary-blue-hover: rgba(51, 105, 255, 0.575);
 }
 
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar Styling */
+/* -----Navbar Styling----- */
 .bg-color {
   background-color: rgb(18, 13, 48);
 }
@@ -29,15 +31,69 @@ body {
 }
 
 .navbar-nav > li > a:hover {
-  border-bottom: 0.1875rem solid var(--primary-blue);
+  border-bottom: 0.1875rem solid var(--primary-cyan);
   border-radius: 0.1845rem;
 }
 
 .navbar-nav > li > a.active,
 .navbar-nav > li > a:focus {
-  border-bottom: 0.1875rem solid var(--primary-blue);
+  border-bottom: 0.1875rem solid var(--primary-cyan);
   border-radius: 0.1845rem;
   color: var(--primary-white) !important;
 }
 
-/* Navbar Styling */
+/* -----Navbar Styling----- */
+
+/* -----Header Styling----- */
+.header-wraper {
+  position: relative;
+  background: url(./Asset/HeaderBackground.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-info h1 {
+  color: var(--primary-cyan);
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+/* --Typed Styling-- */
+.typed-text {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--primary-white);
+}
+/* --Typed Styling-- */
+/* --Btn Contact Me */
+.btn-contact {
+  border: 3px solid var(--primary-blue);
+  text-transform: uppercase;
+  color: var(--primary-white);
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  margin: 2rem;
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  color: var(--primary-white);
+  border: 3px solid var(--primary-blue-hover);
+}
+/* --Btn Contact Me */
+/* -----Header Styling----- */
